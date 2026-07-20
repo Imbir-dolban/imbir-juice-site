@@ -1,0 +1,141 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на соки за литр</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Задний фон с яблоками на весь экран */
+            background-image: url('apples.jpg')
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .table-container {
+            /* Полупрозрачная подложка, чтобы размыть фон и выделить таблицу */
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: transparent;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2e7d32; /* Фирменный зеленый цвет */
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.03); /* Легкое выделение четных строк */
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+
+        td {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            color: #333;
+            font-size: 16px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2e7d32;
+            text-align: right;
+        }
+        
+        th.price-header {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <h2>Стоимость натуральных соков</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Вид сока</th>
+                <th class="price-header">Цена за 1 литр</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Яблочный прямого отжима</td>
+                <td class="price">140 ₽</td>
+            </tr>
+            <tr>
+                <td>Апельсиновый с мякотью</td>
+                <td class="price">180 ₽</td>
+            </tr>
+            <tr>
+                <td>Вишневый осветленный</td>
+                <td class="price">210 ₽</td>
+            </tr>
+            <tr>
+                <td>Томатный с солью</td>
+                <td class="price">130 ₽</td>
+            </tr>
+            <tr>
+                <td>Мультифрукт</td>
+                <td class="price">160 ₽</td>
+            </tr>
+            <tr>
+                <td>Гранатовый (100%)</td>
+                <td class="price">350 ₽</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
